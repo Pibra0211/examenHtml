@@ -6,22 +6,27 @@
     font-style: italic;
 }
 
-
-
-
 header{
     text-align: center;
-    color: white;
+    color: white
+}
+
+h1{
+    background-color: lightblue;
+    color: rgb(68, 108, 253);
+    padding: 5px;
+    margin: 5px;
 }
 
 
 #servicios{
+    min-height: 100vh;
     max-width: 100%;
     max-height: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 10px; 
-    padding: 10px;
+    margin: 50px; 
+    padding: 0px;
     align-items: center;
     text-align: center;
     transition: 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -31,6 +36,7 @@ img{
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+    margin-top: 50px;
     
 }
 
@@ -41,6 +47,8 @@ article{
     border-radius: 10px;
     max-width: 100%;
     max-height: 100%;
+    color: rgb(68, 108, 253);
+    
 }
 article:hover{
     transform: translateY(-8px);
@@ -66,5 +74,30 @@ p{
     background-color: lightblue;
     padding: 5px;
     margin: 5px;
+}
+
+@media (min-width: 768px) {
+    #servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer h2 {
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    justify-content: end;
+    margin-top: 100%;
+    max-width: 100%;
+    color: rgb(68, 108, 253);
 }
 
