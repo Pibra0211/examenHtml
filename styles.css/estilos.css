@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(105, 105, 119);
+    background-color: rgb(144, 144, 162);
+    font-style: italic;
 }
 
 
@@ -16,23 +17,54 @@ header{
 
 #servicios{
     max-width: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 10px; 
     padding: 10px;
     align-items: center;
     text-align: center;
-    transition: ease;
-    transition: 0.3s ease 
+    transition: 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 img{
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     border-radius: 10px;
     
 }
 
 article{
     margin: 30px;
+    transition: 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    background-color: lightblue;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
 }
+article:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px #4218eb;
+    
+}
+
+
+h2{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+h3{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(71, 44, 32);
+}
+
+p{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
