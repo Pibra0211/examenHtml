@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(105, 105, 119);
+}
+
+
+
+
+header{
+    text-align: center;
+    color: white;
+}
+
+
+#servicios{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px; 
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    transition: ease;
+    transition: 0.3s ease 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+article{
+    margin: 30px;
+}
